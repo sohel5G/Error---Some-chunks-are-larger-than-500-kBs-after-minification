@@ -1,7 +1,7 @@
 # Error---Some-chunks-are-larger-than-500-kBs-after-minification
 
 
- ## Comon error : 
+ ## Common error : 
 
  (!) Some chunks are larger than 500 kBs after minification. Consider:
 - Using dynamic import() to code-split the application
@@ -15,6 +15,19 @@ Add the below code in > vite.config.js
   build: {
     chunkSizeWarningLimit: 2000, // Set your preferred limit in kB
   }
-  
 
   
+
+ ## So original file will look like this 
+
+ import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  build: {
+    chunkSizeWarningLimit: 2000, // Set your preferred limit in kB
+  }
+})
+
