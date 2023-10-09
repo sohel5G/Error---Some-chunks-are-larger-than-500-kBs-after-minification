@@ -11,16 +11,16 @@
 ## Solution 
 
 Add the below code in > vite.config.js
-  
+  ```javascript
   build: {
     chunkSizeWarningLimit: 2000, // Set your preferred limit in kB
   }
-
+```
   
 
  ## So original file will look like this 
-
- import { defineConfig } from 'vite'
+```javascript
+import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
@@ -30,4 +30,4 @@ export default defineConfig({
     chunkSizeWarningLimit: 2000, // Set your preferred limit in kB
   }
 })
-
+```
