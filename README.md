@@ -11,10 +11,10 @@
 ## Solution 
 
 Add the below code in > vite.config.js
-  `
+  
   build: {
     chunkSizeWarningLimit: 2000, // Set your preferred limit in kB
   }
-  `
+  
 
   
